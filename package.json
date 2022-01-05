@@ -1,0 +1,25 @@
+{
+    "name": "ags-template-syntax",
+    "displayName": "AGS_Template_Syntax",
+    "description": "",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.63.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "ags-template",
+            "aliases": ["AGS Template", "var"],
+            "extensions": [".var"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "ags-template",
+            "scopeName": "source.var",
+            "path": "./syntaxes/var.tmLanguage.json"
+        }]
+    }
+}
